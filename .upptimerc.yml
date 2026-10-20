@@ -12,8 +12,12 @@ sites:
   - name: Nebula WebSocket
     url: https://ws.nebula.ashutoshsao.com
     expectedStatusCodes: [426] # "upgrade required": the WebSocket server is alive
+  - name: Nebula API
+    url: https://api.nebula.ashutoshsao.com/health # 503 unless database, Redis and the engine answer
   - name: Orin
     url: https://orin.ashutoshsao.com
+  - name: Orin API
+    url: https://api.orin.ashutoshsao.com/health # 503 unless Postgres and Redis answer
   - name: Ardin
     url: https://ardin.ashutoshsao.com/signin
   - name: Proxy
