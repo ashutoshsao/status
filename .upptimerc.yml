@@ -1,31 +1,31 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+# Uptime checks for Ashutosh's deployed apps (run by GitHub Actions every 5 minutes; nothing to host).
+# valor reads history/summary.json for Telegram alerts (2+ failed checks in a row) and the morning digest;
+# ashutoshsao.com/status draws 90-day bars from the same file. Deep /health checks are added as each one deploys.
+owner: ashutoshsao
+repo: status
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Secret Site
-    url: $SECRET_SITE
+  - name: Portfolio
+    url: https://ashutoshsao.com
+  - name: Nebula
+    url: https://nebula.ashutoshsao.com
+  - name: Nebula WebSocket
+    url: https://ws.nebula.ashutoshsao.com
+    expectedStatusCodes: [426] # "upgrade required": the WebSocket server is alive
+  - name: Orin
+    url: https://orin.ashutoshsao.com
+  - name: Ardin
+    url: https://ardin.ashutoshsao.com/signin
+  - name: Proxy
+    url: https://agent-dating-assignment.vercel.app/api/health
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  baseUrl: /status
+  name: Ashutosh Sao — status
+  introTitle: "Status of my deployed apps"
+  introMessage: Checked every 5 minutes by GitHub Actions. The main view lives at [ashutoshsao.com/status](https://ashutoshsao.com/status).
   navbar:
     - title: Status
       href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
-
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+    - title: Portfolio
+      href: https://ashutoshsao.com
