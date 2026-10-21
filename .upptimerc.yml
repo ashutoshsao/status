@@ -14,6 +14,8 @@ sites:
     expectedStatusCodes: [426] # "upgrade required": the WebSocket server is alive
   - name: Nebula API
     url: https://api.nebula.ashutoshsao.com/health # 503 unless database, Redis and the engine answer
+  - name: Nebula workers
+    url: https://api.nebula.ashutoshsao.com/health/workers # 503 unless prices, bot orders, db-poller and wss are fresh
   - name: Orin
     url: https://orin.ashutoshsao.com
   - name: Orin API
