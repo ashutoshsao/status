@@ -25,7 +25,7 @@ sites:
   - name: Ardin API
     url: https://ardin.ashutoshsao.com/api/health # 503 unless the database answers
   - name: Proxy
-    url: https://agent-dating-assignment.vercel.app/api/health
+    url: https://proxy.ashutoshsao.com/api/health
 
 status-website:
   baseUrl: /status
