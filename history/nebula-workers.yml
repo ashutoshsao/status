@@ -1,7 +1,7 @@
 url: https://api.nebula.ashutoshsao.com/health/workers
-status: down
-code: 503
-responseTime: 737
-lastUpdated: 2026-11-12T03:35:53.265Z
+status: up
+code: 200
+responseTime: 890
+lastUpdated: 2026-11-12T20:39:57.771Z
 startTime: 2026-10-21T22:08:41.858Z
 generator: Upptime <https://github.com/upptime/upptime>
