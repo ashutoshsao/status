@@ -24,8 +24,9 @@ sites:
     url: https://ardin.ashutoshsao.com/signin
   - name: Ardin API
     url: https://ardin.ashutoshsao.com/api/health # 503 unless the database answers
-  - name: Proxy
-    url: https://proxy.ashutoshsao.com/api/health
+
+# Proxy is intentionally unmonitored: its database health check wakes the unused
+# Neon compute every five minutes and consumes the monthly compute allowance.
 
 status-website:
   baseUrl: /status
